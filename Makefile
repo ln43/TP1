@@ -2,7 +2,7 @@
 all:	main
 
 main:	main.o	Vector.o	Node.o List.o
-	g++	main.o Vector.o	Node.o	List.o -o main
+	g++ -g main.o Vector.o Node.o List.o -o main
 	
 main.o:	main.cpp	List.h
 	g++	-c	main.cpp	-o	main.o	--std=c++11	-g
@@ -15,3 +15,6 @@ Node.o:	Node.cpp	Node.h	Vector.h
 	
 List.o:	List.cpp	List.h	Node.h
 	g++	-c	List.cpp	-o	List.o	--std=c++11	-g
+	
+clean:
+	rm -f *.o

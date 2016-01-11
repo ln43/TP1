@@ -4,16 +4,6 @@
 #include <stdio.h>
 #include <math.h>
 
-Node::Node(){
-  obj = new Vector();
-  next = nullptr;	
-}
-
-Node::Node(const Node& aobj){
-  obj = aobj.obj;
-  next = aobj.next;
-}
-
 Node::Node(const Vector& aobj){
   obj = new Vector(aobj);
   next = nullptr;
