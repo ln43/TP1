@@ -9,12 +9,12 @@ Node::Node(){
   next = nullptr;	
 }
 
-Node::Node(Node& aobj){
+Node::Node(const Node& aobj){
   obj = aobj.obj;
   next = aobj.next;
 }
 
-Node::Node(Vector& aobj){
+Node::Node(const Vector& aobj){
   obj = new Vector(aobj);
   next = nullptr;
 }

@@ -7,8 +7,8 @@ class Node{
     
   public:
     Node();
-    Node(Node&);
-    Node(Vector&);
+    Node(const Node&);
+    Node(const Vector&);
     ~Node();
     
     void Assign();

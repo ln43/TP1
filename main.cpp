@@ -21,12 +21,14 @@ int main(int argc, char* argv[]) {
   cout<<"Vector v1+vc: x="<<V.get_x()<< ", y="<<V.get_y()<<
     ", norm="<<V.get_norm()<<endl;
   
-  
   Node n1(v1);
   Vector* Vnode=n1.get_obj();
   Vector V2=*Vnode;
   cout<<"Vector node: x="<<V2.get_x()<< ", y="<<V2.get_y()<<
    ", norm="<<V2.get_norm()<<endl;
+
+  List l;
+  //l.PushBack(n1);
   
   
   return EXIT_SUCCESS;
