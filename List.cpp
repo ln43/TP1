@@ -22,3 +22,14 @@ void List::PushBack(Node* n){
   }
   
 }
+
+void List::Insert(Node* newNode, int pos){
+    Node* curr = head_->get_next();
+    Node* prev = head_;
+    for (int i=0; i<pos; i+=1) {
+        curr->get_next();
+        prev->get_next();
+    }
+    prev->set_next(newNode);
+    newNode->set_next(curr);
+}

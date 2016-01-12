@@ -9,5 +9,6 @@ class List{
     List();
     List(Node*);
     void PushBack(Node*);
-
+    void PopBack(Node*);
+    void Insert(Node* newNode,int pos);
 };

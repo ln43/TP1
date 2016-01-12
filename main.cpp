@@ -31,7 +31,9 @@ int main(int argc, char* argv[]) {
   List l;
   l.PushBack(&n2);
   l.PushBack(&n1);
-  
+  Node n(v0);
+  Node* newNode=&n;
+  l.Insert(newNode, 3);
   
   return EXIT_SUCCESS;
 }
