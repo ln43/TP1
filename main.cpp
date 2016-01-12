@@ -27,8 +27,11 @@ int main(int argc, char* argv[]) {
   cout<<"Vector node: x="<<V2.get_x()<< ", y="<<V2.get_y()<<
    ", norm="<<V2.get_norm()<<endl;
 
-  List l;
+  List l1(&n1);
+  cout<<"List l1"<<endl;
+  l1.PopBack();
   //l.PushBack(n1);
+  
   
   
   return EXIT_SUCCESS;

@@ -7,6 +7,8 @@ class List{
     
   public:
     List();
-    void PushBack(Node n);
+    List(Node*);
+    //void PushBack(Node n);
+    void PopBack ();
 
 };
