@@ -33,7 +33,7 @@ int main(int argc, char* argv[]) {
   l.PushBack(&n1);
   Node n(v0);
   Node* newNode=&n;
-  l.Insert(newNode, 3);
+  l.Insert(newNode, 5);
   
   return EXIT_SUCCESS;
 }

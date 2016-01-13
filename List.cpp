@@ -24,12 +24,23 @@ void List::PushBack(Node* n){
 }
 
 void List::Insert(Node* newNode, int pos){
-    Node* curr = head_->get_next();
-    Node* prev = head_;
-    for (int i=0; i<pos; i+=1) {
-        curr->get_next();
-        prev->get_next();
+    nb_elts_+=1;
+    if(head_!=nullptr){
+        Node* curr = head_->get_next();
+        Node* prev = head_;
+        for (int i=0; i<pos or curr!=nullptr; i+=1) {
+            curr->get_next();
+            prev->get_next();
+        }
+        if (curr==nullptr){
+            List::PushBack(newNode);
+        }
+        else{
+            prev->set_next(newNode);
+            newNode->set_next(curr);
+        }
     }
-    prev->set_next(newNode);
-    newNode->set_next(curr);
+    else{
+        head_=newNode;
+    }
 }
