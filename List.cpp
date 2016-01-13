@@ -32,13 +32,8 @@ void List::Insert(Node* newNode, int pos){
             curr->get_next();
             prev->get_next();
         }
-        if (curr==nullptr){
-            List::PushBack(newNode);
-        }
-        else{
-            prev->set_next(newNode);
-            newNode->set_next(curr);
-        }
+        prev->set_next(newNode);
+        newNode->set_next(curr);
     }
     else{
         head_=newNode;
