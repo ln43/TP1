@@ -6,8 +6,10 @@ class Node{
     Vector* obj;
     
   public:
-    Node()=delete;
-    Node(const Node&)=delete;
+
+    Node() = delete;
+    Node(const Node&) = delete;
+
     Node(const Vector&);
     ~Node();
     
