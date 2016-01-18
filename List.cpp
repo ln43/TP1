@@ -41,4 +41,20 @@ void List::PopBack() {
   
 }
 
+void List::Insert(Node* newNode, int pos){
+    nb_elts_+=1;
+    if(head_!=nullptr){
+        Node* curr = head_->get_next();
+        Node* prev = head_;
+        for (int i=0; i<pos or curr!=nullptr; i+=1) {
+            curr->get_next();
+            prev->get_next();
+        }
+        prev->set_next(newNode);
+        newNode->set_next(curr);
+    }
+    else{
+        head_=newNode;
+    }
+}
 

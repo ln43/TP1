@@ -11,6 +11,6 @@ class List{
 
     void PushBack(Node*);
     void PopBack ();
-
+    void Insert(Node* newNode,int pos);
 
 };
